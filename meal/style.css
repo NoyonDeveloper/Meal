@@ -1,0 +1,177 @@
+/*
+Theme Name: Meal
+Theme URI: 
+Author: Noyon Hossain
+Author URI: webproogrammer@gmail.com
+Version: 1.0
+License: Gnu General Public License v2 or Later
+License URI: webproogrammer@gmail.com
+Tags: blog, food-drink
+Text Domain: Meal
+*/
+
+.containerer {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 300px;
+    margin-top: 30px;
+}
+
+.containerer input[type="radio"] {
+    display: none;
+}
+
+.containerer label {
+    width: 23%;
+    float: left;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #222222;
+    padding: 0.5%;
+    margin: 0.5%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.containerer input[type="radio"][id="blue"]:checked+label {
+    background: #6666ff;
+}
+
+.containerer input[type="radio"][id="blue"]:checked~.red,
+.containerer input[type="radio"][id="blue"]:checked~.green {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.containerer input[type="radio"][id="red"]:checked+label {
+    background: #ff4466;
+}
+
+.containerer input[type="radio"][id="red"]:checked~.blue,
+.containerer input[type="radio"][id="red"]:checked~.green {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.containerer input[type="radio"][id="green"]:checked+label {
+    background: #66dd99;
+}
+
+.containerer input[type="radio"][id="green"]:checked~.blue,
+.containerer input[type="radio"][id="green"]:checked~.red {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.containerer .tile {
+    width: 23%;
+    height: 100px;
+    float: left;
+    transition: all 1s;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+.containerer .green {
+    background: #66dd99;
+}
+
+.containerer .blue {
+    background: #6666ff;
+}
+
+.containerer .red {
+    background: #ff4466;
+}
+
+.custom-logo-link img {
+    vertical-align: middle;
+    border-style: none;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-meal {
+    width: 50px;
+    height: 50px;
+}
+
+.ajax-cn {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Jeson File 
+"workbench.iconTheme": "material-icon-theme",
+"editor.minimap.enabled": false,
+"[php]": {
+    "editor.formatOnSave": false,
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+}
+
+,
+"php.validate.executablePath": "C:/xampp/php/php.exe",
+"editor.formatOnPaste": true,
+"editor.formatOnSave": true,
+"editor.mouseWheelZoom": true,
+"mssql.connections": [ {
+    "server": "{{put-server-name-here}}",
+    "database": "{{put-database-name-here}}",
+    "user": "{{put-username-here}}",
+    "password": "{{put-password-here}}"
+}
+
+],
+"files.autoSave": "off",
+"explorer.confirmDelete": false,
+"extensions.autoUpdate": false,
+"editor.fontWeight": null,
+"workbench.editor.showTabs": true,
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+}
+
+,
+"editor.fontFamily": "JetBrains Mono",
+"editor.fontSize": 18,
+"editor.fontLigatures": false,
+"editor.codeActionsOnSave": true,
+"phpfmt.cakephp": true,
+"phpfmt.detect_indent": true,
+"phpfmt.passes": [ "AlignDoubleArrow",
+"ShortArray"
+],
+"phpfmt.exclude": [ "ReindentComments",
+"StripNewlineWithinClassBody",
+],
+"phpfmt.psr2": false,
+"workbench.startupEditor": "newUntitledFile",
+"editor.codeLensFontFamily": "JetBrains Mono",
+"workbench.colorTheme": "Monokai",
+"editor.lightbulb.enable": true,
+"editor.tokenColorCustomizations": null,
+***/
